@@ -41,7 +41,10 @@ for i in range(2000, 3201):
 
 print(','.join(l))
 ```
-
+Solución en una solo línea:
+```python
+print (','.join(map(str, list(filter(lambda i: i%7==0 and i%5!=0, range(2000, 3201))))))
+```
 ### Question 2
 Level 1
 
